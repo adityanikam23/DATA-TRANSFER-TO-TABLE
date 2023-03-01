@@ -1,0 +1,65 @@
+<h1 class="heading">angular form and table</h1>
+
+
+<div id="maindiv">
+  <div class="forinput">
+    <br>
+    <label>first name:</label><br>
+    <input [(ngModel)]="input1" type="text" placehol  der="PLEASE ENTER YOUR FIRST NAME" required ><br><br>
+
+    <label>middle name:</label><br>
+    <input [(ngModel)]="input2" type="text" placeholder="PLEASE ENTER YOUR MIDDLE NAME" required><br><br>
+
+    <label>last name:</label><br>
+    <input [(ngModel)]="input3" type="text" placeholder="PLEASE ENTER YOUR LAST NAME" required><br><br>
+
+    <label>mobile no:</label><br>
+    <input [(ngModel)]="input4" type="text" placeholder="PLEASE ENTER YOUR MOBILE NO" required maxlength="10"><br><br>
+
+    <label>email address:</label><br>
+    <input [(ngModel)]="input5" type="text" placeholder="PLEASE ENTER YOUR EMAIL ADDRESS" required><br><br>
+
+    <label>city:</label><br>
+    <input [(ngModel)]="input6" type="text" placeholder="PLEASE ENTER YOUR CITY" required><br><br>
+
+    <label>state:</label><br>
+    <input [(ngModel)]="input7" type="text" placeholder="PLEASE ENTER YOUR STATE" required><br><br>
+
+    <label>country:</label><br>
+    <input [(ngModel)]="input8" type="text" placeholder="PLEASE ENTER YOUR COUNTRY" required><br><br>
+
+    <button (click)="clickedsubmit()" type="button">submit form</button>
+
+    <button type="button" (click)="resetall()">reset form</button>  
+
+  </div>
+</div><br><br><br>
+
+<div class="fortable" style="overflow-x: scroll;">
+     <table>
+         <thead>
+             <tr>
+                <th>FIRST NAME</th>
+                <th>MIDDLE NAME</th>
+                <th>LAST NAME</th>
+                <th>MOBILE NO</th>
+                <th>EMAIL ADDRESS</th>
+                <th>CITY</th>
+                <th>STATE</th>
+                <th>COUNTRY</th>
+             </tr>
+         </thead>
+         <tbody>
+              <tr *ngFor="let information of records">
+                  <td>{{information.first}}</td>
+                  <td>{{information.middle}}</td>
+                  <td>{{information.last}}</td>
+                  <td>{{information.mobno}}</td>
+                  <td>{{information.address}}</td>
+                  <td>{{information.city}}</td>
+                  <td>{{information.state}}</td>
+                  <td>{{information.country}}</td>
+              </tr>
+         </tbody>
+     </table>
+</div>

@@ -1,0 +1,77 @@
+*{
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 8px black, 2px 2px 8px white;
+}
+#maindiv{
+    border: 2px solid black;
+    height: 830px;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    background-image: url(../../src/app/backgroundimageform.jpeg);
+    background-size: cover;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    
+}
+label{
+    font-size: larger;
+    font-weight: bolder;
+    padding-left: 20px;
+    color: white;
+    text-shadow: 4px 4px 8px black, 4px 4px 8px darkred;
+}
+input{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    color: blue;
+}
+button{
+    background-color: blue;
+    color: white;
+    border: 0;
+    font-size: large;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 2px 2px 6px rgba(251, 79, 0, 0.1);
+}
+/* .fortable{
+    border: 2px solid black;
+    height: 600px;
+    width: 80%;
+    margin: auto;
+}    */
+table,th,td{
+    border: 2px solid black;
+    padding: 20px;
+}
+thead{
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+}
+td{
+    font-size: large;
+    font-weight: bold;
+    background-color: cadetblue;
+    color: white;
+    font-weight: bolder;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
